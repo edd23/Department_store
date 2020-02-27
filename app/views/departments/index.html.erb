@@ -1,0 +1,7 @@
+<h1>City Creek</h1>
+<%= link_to 'Create a new department', new_department_path %>
+<ul>
+  <% @departments.each do |department| %>
+    <li><%= link_to department.name, department %></li>
+  <% end %>
+</ul>
